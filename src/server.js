@@ -29,7 +29,7 @@ app.get('/status', (req, res) => {
                     {min: 20, max: 25}
                 ),
         })),
-        batteris: [ ...Array(batteries).keys() ].map( i => ({
+        batteries: [ ...Array(batteries).keys() ].map( i => ({
             voltage: randFloat(
                 batteriesProblemsEveryN > 0 && (counter % batteriesProblemsEveryN === 0) ? 
                 {min: 0, max: 25}:

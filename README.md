@@ -1,5 +1,46 @@
 # Solar Panels Simulator
 
+Generates a JSON response at `/status` endpoint like this 
+```JSON
+{
+  "panels": [
+    {
+      "voltage": 23.27
+    },
+    {
+      "voltage": 22.95
+    },
+    {
+      "voltage": 22.72
+    },
+    {
+      "voltage": 23.67
+    },
+    {
+      "voltage": 22.92
+    }
+  ],
+  "batteries": [
+    {
+      "voltage": 24.1
+    },
+    {
+      "voltage": 22.6
+    },
+    {
+      "voltage": 24.03
+    },
+    {
+      "voltage": 22.71
+    },
+    {
+      "voltage": 23.42
+    }
+  ],
+  "outputLoad": 42.88
+}
+```
+
 ## Start
 - run `npm i`
 - run `npm run dev` to start the server in dev mode
