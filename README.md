@@ -57,6 +57,7 @@ Use `.env` file to configure your simulation environment (or change/add scripts 
 - `SIM_BATTERIES_N`: number of batteries, default `5`
 - `SIM_PANELS_PROBLEMS_N`: how often a panels problem should be simulated, default `0`
 - `SIM_BATTERIES_PROBLEMS_N`: how often a batteries problem should be simulated, default `0`
+- `SIM_BATTERIES_TEMP_PROBLEMS_N`: how often a batteries temperature problem should be simulated, default `0`
 - `SIM_DELAY_PROBLEM_N`: how often a delay problem should be simulated, default `0`
 
 ## Test

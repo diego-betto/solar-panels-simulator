@@ -10,6 +10,7 @@ const delay = parseInt(process.env.SIM_DELAY || 0, 10)
 
 const panelsProblemsEveryN  = parseInt(process.env.SIM_PANELS_PROBLEMS_N || 0, 10)
 const batteriesProblemsEveryN  = parseInt(process.env.SIM_BATTERIES_PROBLEMS_N || 0, 10)
+const batteriesTempProblemsEveryN  = parseInt(process.env.SIM_BATTERIES_TEMP_PROBLEMS_N || 0, 10)
 const delayProblemEveryN  = parseInt(process.env.SIM_DELAY_PROBLEM_N || 0, 10)
 
 const app = new express()
@@ -35,6 +36,13 @@ app.get('/status', (req, res) => {
                 {min: 0, max: 25}:
                 {min: 20, max: 25}
             ),
+            temperature: 50 + randFloat({
+                min: 0, 
+                max: (
+                    batteriesTempProblemsEveryN > 0 &&
+                    counter % batteriesTempProblemsEveryN  === 0 
+                ) ?  100: 10
+            })
         })),
         outputLoad: 40 + randFloat({min: 0, max: 10})
     }
