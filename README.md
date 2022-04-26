@@ -2,6 +2,7 @@
 
 ## Start
 - run `npm i`
+- run `npm run dev` to start the server in dev mode
 - run `npm run start` to start the server
 
 You can also run `start:problems:panels` or `start:problems:batteries` to simulate preconfigured problems (every 10).
