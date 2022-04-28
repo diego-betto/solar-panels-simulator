@@ -1,48 +1,67 @@
 # Solar Panels Simulator
 
-Generates a JSON response at `/status` endpoint like this 
+Generates JSON responses like these
+
+`/status/panels`
+
+```JSON
+[
+  {
+    "voltage": 20.24
+  },
+  {
+    "voltage": 23.38
+  },
+  {
+    "voltage": 23.18
+  },
+  {
+    "voltage": 21.54
+  },
+  {
+    "voltage": 24.43
+  },
+  {
+    "voltage": 24.53
+  },
+  {
+    "voltage": 23.73
+  },
+  {
+    "voltage": 22.2
+  },
+  {
+    "voltage": 23.93
+  },
+  {
+    "voltage": 22.28
+  }
+]
+```
+
+
+`/status/batteries`
+```JSON
+[
+  {
+    "voltage": 23.55,
+    "temperature": 58.230000000000004
+  },
+  {
+    "voltage": 21.47,
+    "temperature": 57.92
+  },
+  {
+    "voltage": 21.89,
+    "temperature": 52.31
+  }
+]
+```
+
+`/status/loads`
 ```JSON
 {
-  "panels": [
-    {
-      "voltage": 21.28
-    },
-    {
-      "voltage": 23.31
-    },
-    {
-      "voltage": 21.49
-    },
-    {
-      "voltage": 22.24
-    },
-    {
-      "voltage": 21.77
-    }
-  ],
-  "batteries": [
-    {
-      "voltage": 21.32,
-      "temperature": 55.67
-    },
-    {
-      "voltage": 23.87,
-      "temperature": 55.91
-    },
-    {
-      "voltage": 23.76,
-      "temperature": 54.89
-    },
-    {
-      "voltage": 22.78,
-      "temperature": 57.08
-    },
-    {
-      "voltage": 23.63,
-      "temperature": 55.43
-    }
-  ],
-  "outputLoad": 44.05
+  "outputLoad": 45.81
 }
 ```
 

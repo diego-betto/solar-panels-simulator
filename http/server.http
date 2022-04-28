@@ -1,1 +1,12 @@
-GET http://localhost:3000/status
+@host=http://localhost:3000
+
+
+GET {{host}}/status/panels
+
+###
+
+GET {{host}}/status/batteries
+
+###
+
+GET {{host}}/status/loads
