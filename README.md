@@ -3,46 +3,46 @@
 Generates a JSON response at `/status` endpoint like this 
 ```JSON
 {
-  panels: [
+  "panels": [
     {
-      voltage: 21.28
+      "voltage": 21.28
     },
     {
-      voltage: 23.31
+      "voltage": 23.31
     },
     {
-      voltage: 21.49
+      "voltage": 21.49
     },
     {
-      voltage: 22.24
+      "voltage": 22.24
     },
     {
-      voltage: 21.77
+      "voltage": 21.77
     }
   ],
-  batteries: [
+  "batteries": [
     {
-      voltage: 21.32,
-      temperature: 55.67
+      "voltage": 21.32,
+      "temperature": 55.67
     },
     {
-      voltage: 23.87,
-      temperature: 55.91
+      "voltage": 23.87,
+      "temperature": 55.91
     },
     {
-      voltage: 23.76,
-      temperature: 54.89
+      "voltage": 23.76,
+      "temperature": 54.89
     },
     {
-      voltage: 22.78,
-      temperature: 57.08
+      "voltage": 22.78,
+      "temperature": 57.08
     },
     {
-      voltage: 23.63,
-      temperature: 55.43
+      "voltage": 23.63,
+      "temperature": 55.43
     }
   ],
-  outputLoad: 44.05
+  "outputLoad": 44.05
 }
 ```
 
