@@ -70,8 +70,6 @@ Generates JSON responses like these
 - run `npm run dev` to start the server in dev mode
 - run `npm run start` to start the server
 
-You can also run `start:problems:panels` or `start:problems:batteries` to simulate preconfigured problems (every 10).
-
 Use `.env` file to configure your simulation environment (or change/add scripts in [`package.json`](package.json#10))
 
 ## Optional env variables
